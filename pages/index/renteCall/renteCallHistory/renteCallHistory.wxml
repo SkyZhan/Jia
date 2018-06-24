@@ -1,2 +1,31 @@
 <!--pages/index/renteCall/renteCallHistory/renteCallHistory.wxml-->
-<text>pages/index/renteCall/renteCallHistory/renteCallHistory.wxml</text>
+<view class="container">
+   <view class='history-table-wrap'>
+    <view class="table" wx:for="{{renteMoney}}">
+      <view class="tr">
+          <view class="th th1">缴费总额</view>
+          <view class="th th1"></view>
+          <view class="th th1"></view>
+          <view class="th th1 sumstyle">￥{{item.totalfee}}</view>
+      </view>
+      <view class="tr" >
+          <view class="th th1">租金</view>
+          <view class="td th1">{{item.rentefee}}</view>
+          <view class="th th1">水费</view>
+          <view class="td th1">{{item.waterfee}}</view>
+      </view>
+            <view class="tr" >
+          <view class="th th1">电费</view>
+          <view class="td th1">{{item.eletrfee}}</view>
+          <view class="th th1">物业费</view>
+          <view class="td th1">{{item.propefee}}</view>
+      </view>
+      <view class="tr" >
+          <view class="th th1">其他费用</view>
+          <view class="td th1">{{item.otherfee}}</view>
+          <view class="th th1">缴费日期</view>
+          <view class="td th1">{{item.date}}</view>
+      </view>
+    </view>
+  </view>
+</view>

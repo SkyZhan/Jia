@@ -5,6 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+    renteMoney:[
+    {
+      totalfee:1902,
+      rentefee:1700,
+      waterfee:123,
+      eletrfee:34,
+      propefee:100,
+      otherfee:234,
+      date:'2018-08-01'
+    },
+    {
+      totalfee: 1902,
+      rentefee: 1700,
+      waterfee: 123,
+      eletrfee: 34,
+      propefee: 100,
+      otherfee: 234,
+      date: '2018-07-01'
+    }
+    ],
   
   },
 
