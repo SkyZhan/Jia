@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="index-icon">
+    <image class="index-img" src="/images/login/bg.jpg"></image>
+    <view class="index-line">
+      <view class="table">  
+        <view class="tr bg-w">  
+          <view class="th">今日结余（RMB）</view>  
+          <view class="th">今日入住率</view>   
+        </view>  
+        <block wx:for="{{listData}}" wx:key="{{code}}">  
+          <view class="tr bg-g" wx:if="{{index % 2 == 0}}">  
+            <view class="td">{{item.rmb}}</view>  
+            <view class="td">{{item.rate}}</view>  
+          </view>  
+        </block>  
+      </view>  
+    </view>
+    <view class="weui-grids">  
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">  
+        <navigator url="{{item.url}}">  
+          <view class="weui-grid__icon">  
+            <image src=" {{item.icon}}" mode="scaleToFill" />  
+          </view>  
+          <text class="weui-grid__label">{{item.name}}</text>  
+        </navigator>  
+      </view>  
+    </view>  
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="head">
+    <!-- 箭头 -->
+    <view class="routers_box" wx:for="{{routers}}" wx:key="name"> 
+      <navigator url="{{item.url}}"> 
+        <view class="routers_icon"> 
+          <image src=" {{item.icon}}" mode="scaleToFill" /> 
+        </view> 
+      </navigator> 
+    </view>
+    <!-- 选择框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/images/renteCall/gobottom.png'></image> 
+        </view>
+        <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+          <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+      </view>
+    </view> 
+    <!-- 一键催缴 -->
+    <view class="btn_box">
+      <button class="btn_style" bindtap="primary">一键催交 </button>
+    </view>
+  </view>
+  <!--住房显示-->
+  <view class='history-table-wrap'>
+    <view class="table" wx:for="{{renteData}}" wx:key="{{renteid}}">
+      <view class="tr">
+          <view class="th th1">{{item.rentehouse}}</view>
+          <view class="th th2"><button class="rentebtn1" >催交 </button></view>
+      </view>
+      <view class="tr" >
+        <view class="td td1">
+          <text class="wordcolor">上月需缴</text>
+          <text> {{item.prepay}}</text>
+          <text style="padding-left:50rpx;color:#330e0e">本月需缴</text>
+          <text> {{item.nextpay}}</text>
+        </view>
+        <view class="td td2"></view>
+      </view>
+      <view class="tr" >
+        <view class="td td1">
+          <text class="wordcolor"> 缴费状态</text> {{item.paystatus}}
+        </view>
+        <view class="td td2">
+          <button class="rentebtn2" catchtap="onTapToHistory" data-post-id="{{renteid}}">缴费历史 </button>
+        </view>
+      </view>
+    </view>
+ </view>
+</view>
