@@ -54,5 +54,12 @@ Page({
       url: 'renteCallHistory/renteCallHistory?id=' + renteid,
     })
   },
+  onTapToChanges(event) {
+    var renteid = event.currentTarget.dataset.renteid;
+    console.log(renteid);
+    wx.navigateTo({
+      url: 'renteCallChanges/renteCallChanges?id=' + renteid,
+    })
+  },
 
 })

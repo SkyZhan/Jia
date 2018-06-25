@@ -28,7 +28,7 @@
     <view class="table" wx:for="{{renteData}}" wx:key="{{renteid}}">
       <view class="tr">
           <view class="th th1">{{item.rentehouse}}</view>
-          <view class="th th2"><button class="rentebtn1" >催交 </button></view>
+          <view class="th th2"><button class="rentebtn1" >催交</button></view>
       </view>
       <view class="tr" >
         <view class="td td1">
@@ -37,14 +37,14 @@
           <text style="padding-left:50rpx;color:#330e0e">本月需缴</text>
           <text> {{item.nextpay}}</text>
         </view>
-        <view class="td td2"></view>
+        <view class="td td2"><button class="rentebtn2" catchtap="onTapToChanges" data-post-id="{{renteid}}">修改费用</button></view>
       </view>
       <view class="tr" >
         <view class="td td1">
           <text class="wordcolor"> 缴费状态</text> {{item.paystatus}}
         </view>
         <view class="td td2">
-          <button class="rentebtn2" catchtap="onTapToHistory" data-post-id="{{renteid}}">缴费历史 </button>
+          <button class="rentebtn3" catchtap="onTapToHistory" data-post-id="{{renteid}}">缴费历史 </button>
         </view>
       </view>
     </view>
