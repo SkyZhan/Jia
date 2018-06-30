@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/renteCall/renteCall",
-    "pages/index/renteCall/renteCallHistory/renteCallHistory",
+    "pages/index/registeCheck/registeCheck",
     "pages/index/renteCall/renteCallChanges/renteCallChanges",
+    "pages/index/renteCall/renteCallHistory/renteCallHistory",
+    "pages/index/renteCall/renteCall",
     "pages/index/index",
     "pages/login/login",
     "pages/logs/logs"

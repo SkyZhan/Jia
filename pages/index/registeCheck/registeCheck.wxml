@@ -1,0 +1,32 @@
+<!--pages/index/registeCheck/registeCheck.wxml-->
+<view class="container">
+  <view class='history-table-wrap'>
+    <view class="table" wx:for="{{15}}">
+      <view class="tr">
+        <view class="th th1">房间信息 
+          <text style="color:#ec9480;font-weight: 100;">家公馆1号302</text>
+        </view>
+        <view class="td td1">
+          <button class="rentebtn1" catchtap="onTapToChanges" >批准</button>
+        </view>
+        <view class="td td1">
+          <button class="rentebtn2" catchtap="onTapToChanges" >拒绝</button>
+      </view>
+      </view>
+      <view class="tr">
+        <view class="th th2">姓名 
+          <text style="color:#ec9480;font-weight: 100;">蔡培德</text>
+        </view>
+        <view class="th th3">身份证  
+          <text style="color:#ec9480;font-weight: 100;">223789011893832009</text>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="th th1">手机号码 
+          <text style="color:#ec9480;font-weight: 100;">12345678987</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

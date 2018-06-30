@@ -1,10 +1,5 @@
 <!--pages/index/renteCall/renteCallHistory/renteCallHistory.wxml-->
 <view class="container">
-  <view class="returnBtn" wx:for="{{routers}}" wx:key="name"> 
-      <navigator url="{{item.url}}"> 
-        <image src=" {{item.icon}}" mode="scaleToFill" /> 
-      </navigator> 
-  </view>
   <!-- 缴费记录 -->
   <view class='history-table-wrap'>
     <view class="table" wx:for="{{renteMoney}}">

@@ -35,7 +35,7 @@ Page({
         icon: '/images/index/repair.png'
       },
       {
-        name: '客户资料',
+        name: '注册审核',
         url: '',
         icon: '/images/index/book.png'
       },
