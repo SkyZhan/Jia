@@ -1,1 +1,34 @@
 /* pages/index/renteCall/renteCallChanges/renteCallChanges.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  margin-top: -180rpx; 
+}
+container{
+  width: 100%;
+  font-family: 'Microsoft YaHei';
+}
+.section__title{
+  width:100%;
+}
+.form-group{
+   width:600rpx;
+   margin: 10rpx;
+
+}
+.section{
+    clear: both;
+    width:100%;
+    font-size: 36rpx;
+    margin: 20rpx;
+}
+.input-text{
+    line-height: 80rpx;
+    font-size: 32rpx;
+    border-bottom: 2rpx solid #cdcdcd;
+}
+.button{
+    border: 1px solid #1aad19;
+    border-radius: 2px;
+}
+

@@ -1,2 +1,46 @@
 <!--pages/index/renteCall/renteCallChanges/renteCallChanges.wxml-->
-<text>pages/index/renteCall/renteCallChanges/renteCallChanges.wxml</text>
+   <view id="changescall" class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+         <view class="section">
+            <view class="section__title">房间租金:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="housefee"   />
+            </view>    
+        </view>
+        <view class="section">
+            <view class="section__title">水费:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="waterfee"   />
+            </view>    
+        </view>
+        <view class="section">
+            <view class="section__title">电费:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="eletrfee"  />
+            </view>    
+        </view>
+        <view class="section">
+            <view class="section__title">物业费:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="propefee"   />
+            </view>    
+        </view>
+        <view class="section">
+            <view class="section__title">其他费用:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="otherfee"   />
+            </view>    
+        </view>
+        <view class="section">
+            <view class="section__title">总费用:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="totalfee"  disabled="disabled" value="{{}}"   />
+            </view>    
+        </view>
+
+        <view class="section btn-area">
+            <button formType="submit">提交</button>
+        </view>
+    </form>
+  </view>    
+

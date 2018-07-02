@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
   },
 
   /**
@@ -62,5 +61,18 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  // 提交信息
+  formSubmit: function (e) {
+    var house = parseInt(e.detail.value.housefee);
+    var water = parseInt(e.detail.value.waterfee);
+    var eletr = parseInt(e.detail.value.eletrfee);
+    var prope = parseInt(e.detail.value.propefee);
+    var other = parseInt(e.detail.value.otherfee);
+    var total = house+water+eletr+prope+other;
+    console.log('form发生了submit事件，总额度为：', total);
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+
+
 })

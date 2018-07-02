@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/registeCheck/registeCheck",
     "pages/index/renteCall/renteCallChanges/renteCallChanges",
+    "pages/index/registeCheck/registeCheck",
     "pages/index/renteCall/renteCallHistory/renteCallHistory",
     "pages/index/renteCall/renteCall",
     "pages/index/index",
