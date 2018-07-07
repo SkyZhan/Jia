@@ -1,0 +1,39 @@
+/* pages/index/houseAppointment/houseAppointment.wxss */
+page
+{
+  width: 100%;
+}
+.history-table-wrap{
+  width: 100%;
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 10rpx;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.td{
+  padding: 10rpx;
+  text-align: left;
+  width: 100%;
+  font-size: 28rpx;
+  color: #111;
+
+}
+.td1{
+  width: 50%;
+
+}
+.td2{
+     color: #ec9480;
+}
+fonts{
+  font-size: 20rpx;
+}

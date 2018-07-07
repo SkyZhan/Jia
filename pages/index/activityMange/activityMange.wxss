@@ -1,0 +1,68 @@
+/* pages/index/activityMange/activityMange.wxss */
+page
+{
+  width: 100%;
+}
+.history-table-wrap{
+  width: 100%;
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada;
+  height: 260rpx;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 10rpx;
+}
+.left
+{
+    float: left;
+    width: 30%;
+}
+.right
+{
+    float: right;
+    width: 65%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.td{
+  padding:8rpx;
+  text-align: left;
+  width: 100%;
+  font-size: 24rpx;
+  color: #111;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+.td1{
+  width: 60%;
+
+}
+.td3{
+  width: 40%;
+
+}
+.td2{
+     color: #ec9480;
+}
+.fonts{
+  margin-top:2%; 
+  font-size: 26rpx;
+  font-weight: 800;
+}
+.rentebtn1{
+  width: 90%;
+  font-size: 22rpx;
+  border-radius: 10rpx;
+  border:2rpx solid #dd4b39;
+  color: #dd4b39;
+  margin-right: 10rpx;
+}

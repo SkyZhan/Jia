@@ -1,0 +1,26 @@
+<!--pages/index/activityMange/activityMange.wxml-->
+ <view class='history-table-wrap'>
+    <view class="table" wx:for="{{3}}">
+      <view class="left">
+           <image style="width:230rpx;height:190rpx;padding:30rpx 10rpx 10rpx 10rpx;" class="index-img" src="/images/login/bg.jpg"></image>
+      </view>
+      <view class="right">
+        <view class="tr">
+            <view class="td td1 fonts">大峡谷夜游篝火宴会</view>
+            <view class="td td1"><button class="rentebtn1" >查看报名人数</button></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">发布时间：<text class="td2">2018-09-08</text></view>
+            <view class="td td3">总人数：<text class="td2">1234</text></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">报名结束：<text class="td2">2018-09-08</text></view>
+            <view class="td td3">当前人数：<text class="td2">1234</text></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">出发时间：<text class="td2">2018-09-08</text></view>
+            <view class="td td3">进度：<text class="td2">1234</text></view>
+        </view>
+        </view>
+    </view>
+ </view>

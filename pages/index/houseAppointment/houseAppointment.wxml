@@ -1,0 +1,34 @@
+<!--pages/index/houseAppointment/houseAppointment.wxml-->
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label" style="font-size:28rpx;">选择日期</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+              <view class="weui-input">{{date}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+ <view class='history-table-wrap'>
+    <view class="table" wx:for="{{5}}">
+      <view class="tr">
+          <view class="td td1">房间：<text class="td2">303</text></view>
+          <view class="td td1">租金：<text class="td2">1234</text></view>
+      </view>
+      <view class="tr">
+          <view class="td td1">房型：<text class="td2"></text></view>
+          <view class="td td1">地址：<text class="td2"></text></view>
+      </view>
+      <view class="tr">
+          <view class="td td1">姓名：<text class="td2"></text></view>
+          <view class="td td1">手机号码：<text class="td2"></text></view>
+      </view>
+      <view class="tr">
+          <view class="td td1">看房时间：<text class="td2"></text></view>
+          <view class="td td1">申请时间：<text class="td2"></text></view>
+      </view>
+    </view>
+ </view>

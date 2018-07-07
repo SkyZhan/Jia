@@ -1,0 +1,45 @@
+<!--pages/index/activityMange/activityContent/activityContent.wxml-->
+<!--pages/index/activityMange/activityMange.wxml-->
+ <view class='history-table-wrap'>
+    <view style="border-bottom:1rpx solid #777;margin-left:4rpx;">大峡谷夜游篝火宴会</view>
+    <view class="table" style="border:0">
+      <view class="left" >
+        <view class="tr" style="padding-left:30rpx;">
+            <view class="td td1">出发时间：<text class="td2">2018-09-08</text></view>
+        </view>
+        <view class="tr" style="padding-left:30rpx;">
+            <view class="td td1">当前报名人数：<text class="td2">80人</text></view>
+        </view>
+        <view class="tr" style="padding-left:30rpx;">
+            <view class="td td1">总报名人数：<text class="td2">80人</text></view>
+        </view>
+        <view class="tr" style="padding-left:30rpx;">
+            <view class="td td1">当前报名状态：<text class="td2">满人</text></view>
+        </view>
+      </view>
+      <view class="right">
+        <button class="rentebtn1" bindtap="uptype" >上线</button>
+        <button class="rentebtn1" bindtap="downtype" >下线</button>
+      </view>
+    </view>
+    <view style="border:1rpx solid #777;width:99.5%;">参与者信息</view>
+    <view class="table" wx:for="{{3}}">
+        <view class="tr">
+            <view class="td td3">姓名：<text class="td2">踩踩踩</text></view>
+            <view class="td td1">身份证：<text class="td2">420987566789095667</text></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">手机号码：<text class="td2">12379067890</text></view>
+            <view class="td td1"></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">报名结束：<text class="td2">2018-09-08 10：00</text></view>
+            <view class="td td1"></view>
+        </view>
+        <view class="tr">
+            <view class="td td1">房间：<text class="td2">家公馆1号馆101</text></view>
+            <view class="td td1"></view>
+        </view>
+    </view>
+ </view>
+

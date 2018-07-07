@@ -36,12 +36,12 @@ Page({
       },
       {
         name: '注册审核',
-        url: '',
+        url: '../index/registeCheck/registeCheck',
         icon: '/images/index/book.png'
       },
       {
-        name: '报表',
-        url: '',
+        name: '看房预约',
+        url: '../index/houseAppointment/houseAppointment',
         icon: '/images/index/linegraph.png'
       },
       {

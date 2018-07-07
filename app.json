@@ -1,11 +1,16 @@
 {
   "pages": [
+    "pages/index/activityMange/activityContent/activityContent",
+    "pages/index/activityMange/activityMange",
+    "pages/index/index",
+    "pages/index/houseAppointment/houseAppointment",
+    "pages/login/login",
     "pages/index/renteCall/renteCallChanges/renteCallChanges",
     "pages/index/registeCheck/registeCheck",
     "pages/index/renteCall/renteCallHistory/renteCallHistory",
     "pages/index/renteCall/renteCall",
-    "pages/index/index",
-    "pages/login/login",
+
+
     "pages/logs/logs"
   ],
   "window": {
